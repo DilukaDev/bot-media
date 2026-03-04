@@ -47,7 +47,7 @@ async def require_admin(
     Raises:
         HTTPException: 401 Unauthorized if the key does not match ADMIN_API_KEY.
     """
-    if x_api_key != settings.ADMIN_API_KEY:
+    if x_api_key != settings.admin_api_key:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Admin access required.",
