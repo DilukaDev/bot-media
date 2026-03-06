@@ -1,6 +1,6 @@
 import asyncpg
 from pathlib import Path
-from config import settings
+from core.config import settings
 
 # Module level pool - set during app startup, torn down on shutdown
 _pool: asyncpg.Pool | None = None

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 import asyncpg
-from auth import require_admin
+from core.auth import require_admin
 from models import AgentCreate, AgentCreated, AgentOut
 from services.agent_service import AgentService
 

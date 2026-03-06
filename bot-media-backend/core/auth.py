@@ -1,7 +1,7 @@
 from typing import Annotated
 from asyncpg import Record
 from fastapi import Header, HTTPException, status
-from config import settings
+from core.config import settings
 from database import get_pool
 
 

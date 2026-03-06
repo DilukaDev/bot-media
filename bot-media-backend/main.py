@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from config import settings
+from core.config import settings
 from database import close_db, init_db
 from services.connection_manager import ConnectionManager
 from controllers import health, agents, posts, websocket

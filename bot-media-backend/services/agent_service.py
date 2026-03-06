@@ -1,6 +1,6 @@
 import secrets
 import asyncpg
-from config import settings
+from core.config import settings
 from repositories.agent_repository import AgentRepository
 
 

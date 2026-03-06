@@ -3,7 +3,7 @@ import uuid
 import asyncpg
 from fastapi import APIRouter, Depends, Query, status
 from typing import Annotated
-from auth import require_agent
+from core.auth import require_agent
 from models import PostCreate, PostOut
 from services.connection_manager import ConnectionManager
 from services.post_service import PostService

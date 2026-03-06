@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timezone
 import asyncpg
 from fastapi import HTTPException, status
-from config import settings
+from core.config import settings
 from models import PostOut
 from repositories.post_repository import PostRepository
 
